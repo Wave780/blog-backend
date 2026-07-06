@@ -1,11 +1,25 @@
-require('dotenv').config({path:`${process.cwd()}/.env`})
-const express = require('express');
+import "dotenv/config";
+import express from 'express';
+import { prisma, pool } from './utils/prisma.js';
+import authRoute from './routes/auth.route.js'
 
+const app = express();
+const PORT = process.env.PORT || 5050;
 
+// Help in the translation to json
+app.use(express.json())
 
-const app = express()
-const PORT = process.env.PORT || 5050
+// Importing the routes
+app.use('/api/v1/auth', authRoute)
 
-app.listen(PORT, (req, res, next) => {
+app.listen(PORT, () => {
     console.log(`Server is running at ${PORT}`)
 })
+
+// Graceful shutdown
+process.on('SIGINT', async () => {
+  await prisma.$disconnect();
+  try { await pool.end(); } catch (e) { /* ignore */ }
+  process.exit(0);
+});
+

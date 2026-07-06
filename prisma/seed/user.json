@@ -1,0 +1,23 @@
+[
+  {
+    "email": "john@example.com",
+    "password": "$2b$10$4hP2uQb2QeJYqG7PqK1z3uKzXnL3lY8sA7mD9oH1gK2fR6P7QwL8G",
+    "name": "John Doe",
+    "bio": "Software Engineer and Blogger",
+    "avatar": "https://images.example.com/users/john.jpg"
+  },
+  {
+    "email": "jane@example.com",
+    "password": "$2b$10$4hP2uQb2QeJYqG7PqK1z3uKzXnL3lY8sA7mD9oH1gK2fR6P7QwL8G",
+    "name": "Jane Smith",
+    "bio": "Tech Writer",
+    "avatar": "https://images.example.com/users/jane.jpg"
+  },
+  {
+    "email": "michael@example.com",
+    "password": "$2b$10$4hP2uQb2QeJYqG7PqK1z3uKzXnL3lY8sA7mD9oH1gK2fR6P7QwL8G",
+    "name": "Michael Johnson",
+    "bio": "Backend Developer",
+    "avatar": "https://images.example.com/users/michael.jpg"
+  }
+]

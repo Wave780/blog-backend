@@ -1,0 +1,20 @@
+[
+  {
+    "email": "subscriber1@example.com",
+    "name": "David Wilson",
+    "confirmedAt": "2026-07-01T08:00:00.000Z",
+    "unsubscribedAt": null
+  },
+  {
+    "email": "subscriber2@example.com",
+    "name": "Sarah Brown",
+    "confirmedAt": "2026-07-02T09:30:00.000Z",
+    "unsubscribedAt": null
+  },
+  {
+    "email": "subscriber3@example.com",
+    "name": "Chris Adams",
+    "confirmedAt": null,
+    "unsubscribedAt": null
+  }
+]
