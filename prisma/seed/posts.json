@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Getting Started with Prisma",
+    "slug": "getting-started-with-prisma",
+    "content": "Prisma is a modern ORM for Node.js and TypeScript.",
+    "excerpt": "Learn how to get started with Prisma.",
+    "coverImage": "https://images.example.com/posts/prisma.jpg",
+    "status": "PUBLISHED",
+    "publishedAt": "2026-07-01T10:00:00.000Z",
+    "readTime": 5,
+    "viewsCount": 320,
+    "likesCount": 42,
+    "authorId": 1
+  },
+  {
+    "title": "Building REST APIs with Express",
+    "slug": "building-rest-apis-with-express",
+    "content": "Express makes it easy to build RESTful APIs.",
+    "excerpt": "A beginner guide to Express.",
+    "coverImage": "https://images.example.com/posts/express.jpg",
+    "status": "PUBLISHED",
+    "publishedAt": "2026-07-02T12:00:00.000Z",
+    "readTime": 7,
+    "viewsCount": 210,
+    "likesCount": 31,
+    "authorId": 2
+  },
+  {
+    "title": "Understanding PostgreSQL Indexes",
+    "slug": "understanding-postgresql-indexes",
+    "content": "Indexes improve database performance.",
+    "excerpt": "Everything you need to know about indexes.",
+    "coverImage": "https://images.example.com/posts/postgres.jpg",
+    "status": "DRAFT",
+    "publishedAt": null,
+    "readTime": 8,
+    "viewsCount": 0,
+    "likesCount": 0,
+    "authorId": 3
+  }
+]
