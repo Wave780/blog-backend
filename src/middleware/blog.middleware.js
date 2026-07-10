@@ -27,10 +27,14 @@ const postSchema = Joi.object({
         'string.uri': 'Cover image must be a valid URL.',
         'any.required': 'Cover image is required.',
     }),
+    categoryId: Joi.string().uuid().required().messages({
+        'string.uuid': 'Category ID must be a valid UUID.',
+        'any.required': 'Category ID is required.',
+    })
 });
 
 const blogValidator = (req, res, next) => {
-    const { error } = postSchema.validate(req.body, { abortEarly: false });
+    const { error, value } = postSchema.validate(req.body, { abortEarly: false });
 
     if (error) {
         const messages = error.details.map((detail) => detail.message);
@@ -41,6 +45,7 @@ const blogValidator = (req, res, next) => {
         });
     }
 
+    req.validated = value; 
     next();
 };
 

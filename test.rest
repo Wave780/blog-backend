@@ -1,0 +1,15 @@
+@baseUrl = http://localhost:6000/api/v1
+## Create Post
+POST {{baseUrl}}/blog/createPost
+Accept: : application/json
+Content-Type: application/json
+
+{
+    "title": "Building REST APIs with Express",
+    "content": "Express makes it easy to build RESTful APIs.",
+    "excerpt": "A beginner guide to Express.",
+    "coverImage": "https://images.example.com/posts/express.jpg",
+    "tags": ["Backend", "Tech"],
+    "categoryId": "123e4567-e89b-12d3-a456-426614174000"
+}
+

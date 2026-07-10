@@ -1,8 +1,7 @@
 import "dotenv/config";
 import express from 'express';
 import { prisma, pool } from './utils/prisma.js';
-import authRoute from './routes/auth.route.js'
-import blogRoute from './routes/blog.route.js'
+import routes from './routes/index.js';
 
 const app = express();
 const PORT = process.env.PORT || 5050;
@@ -11,8 +10,7 @@ const PORT = process.env.PORT || 5050;
 app.use(express.json())
 
 // Importing the routes
-app.use('/api/v1/auth', authRoute)
-app.use('/api/v1/blog', blogRoute)
+app.use('/api/v1', routes)
 
 app.listen(PORT, () => {
     console.log(`Server is running at ${PORT}`)
@@ -24,4 +22,3 @@ process.on('SIGINT', async () => {
   try { await pool.end(); } catch (e) { /* ignore */ }
   process.exit(0);
 });
-
